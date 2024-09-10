@@ -90,15 +90,36 @@ body, html {
 .name-container {
     width: 66.67%;
     display: flex;
-    align-items: center;
+    flex-direction:column;
+    align-items: flex-start;
     justify-content: center;
 }
+
 .name {
     font-size: 48px;
     font-weight: bold;
     color: white;
     text-align: center;
 }
+
+.textblock-name {
+    margin-bottom: 20px; /* Adjust this value to control the space between the two blocks */
+}
+
+.textblock-secondary {
+    display: flex;
+    gap: 15px; /* This adds space between the links */
+}
+
+.textblock-secondary a {
+    text-decoration: none;
+    color: inherit; /* This will make the link color match the text color */
+}
+
+.textblock-secondary a:hover {
+    text-decoration: underline; /* This adds an underline on hover for better user interaction */
+}
+
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
